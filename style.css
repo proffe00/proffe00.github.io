@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container .card img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+
+*{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+
+
+.container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(/mrproffe.png);    background image */
+    /* background-position: center; */
+    /* background-size: cover; */
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    padding: 40px;
+    flex-direction: column;
+    
+
+    
+}
+
+.card{
+    width: 90%;
+    max-width: 440px;
+    color: white;
+    text-align: center;
+    padding: 50px 35px;
+    /* border: 1px solid rgba(255, 255, 255,0.3); */
+    border: 1px solid rgba(255, 255, 255,0.1);
+    border-top: 1px solid rgba(255, 255, 255,0.3);
+    border-left: 1px solid rgba(255, 255, 255,0.3);
+    background: rgba(255, 255, 255,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0,0.2);
+    backdrop-filter: blur(5px);
+
+}
+.card img {
+    width: 140px;          /* imgae size*/ 
+    border-radius: 50%;
+    
+}
+
+.card h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+
+.card p{
+    font-size: 20px;
+    margin: 15px auto;
+    max-width: 330px;
+    font-family: "Overpass Mono",monospace;
+
+}
+
+.card .links{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+  
+}
+
+.card .links img{     /*social ico*/
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+    
+}
+
+.card .links img:hover{
+    background: #ff01cf;
+    
+}
+
+
+
+
+/* button */
+
+
+.buttons {
+    z-index: 10;
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    max-width: 440px;
+    
+}
+
+.buttons .button {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    width: 90%;
+    max-width: 440px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: "Overpass Mono",monospace;
+
+    border: 1px solid rgba(255, 255, 255,0.1);
+    border-top: 1px solid rgba(255, 255, 255,0.3);
+    border-left: 1px solid rgba(255, 255, 255,0.3);
+    background: rgba(255, 255, 255,0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0,0.2);
+    backdrop-filter: blur(5px);
+
+}
+.buttons .button:hover {
+    scale: 1;
+    background: rgba(255, 255, 255,0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0,0.5);
+    font-size: large;
+    transition: .3s ease-out;
+
+}
+
+.buttons .button:active{
+    background:rgb(23, 75, 135);
+    /* border: 3px solid blueviolet ; */
+    box-shadow: 3px 5px #7474b2 ;
+    
+}
+
+
+
+/* icons */
+
+.icons {
+    display: flex;
+    flex-flow: inherit;
+    padding: 0% 5%;
+}
+
+.icons .icon {                /*ico back size*/
+    cursor: pointer;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 20px;
+    transition: .3s ease-out;
+}
+
+.icons .icon:hover {
+    scale: 1.15;
+}
+
+.icons .icon .bg {                
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;       /*ico back border*/
+    transform: rotate(14deg);
+    transition: .3s ease-out;
+}
+
+.icons .icon:hover .bg {
+    transform: rotate(24deg);
+}
+
+.icons .icon:nth-child(1) .bg {
+    background:  #0077b5;
+}
+
+.icons .icon:nth-child(2) .bg {
+    background: #34a853;
+}
+
+.icons .icon:nth-child(3) .bg {
+    background: #6159a7;
+}
+
+.icons .icon:nth-child(4) .bg {
+    background: #ff4500;
+}
+
+.icons .icon:nth-child(5) .bg {
+    background: #6159a7;
+}
+
+.icons .icon:nth-child(6) .bg {
+    background: #1d202d;
+}
+
+.icons .icon .glass {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.icons .icon i {
+    font-size: 36px;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, .3)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
